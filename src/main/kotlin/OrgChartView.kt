@@ -49,7 +49,6 @@ fun OrgChartView(nodos: List<OrgNode>, nivel: Int = 0, esUltimoHijo: Boolean = t
                                     strokeWidth = strokeWidth
                                 )
                             } else {
-                                // Si es el último, la línea va solo hasta la mitad
                                 drawLine(
                                     color = lineColor,
                                     start = Offset(0f, 0f),
@@ -61,7 +60,6 @@ fun OrgChartView(nodos: List<OrgNode>, nivel: Int = 0, esUltimoHijo: Boolean = t
                     }
                 }
 
-                // Tarjeta del nodo
                 Column(
                     modifier = Modifier.weight(1f)
                 ) {
